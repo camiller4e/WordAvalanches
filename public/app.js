@@ -11,7 +11,10 @@ const requestComplete = function(){
 
   let shuffledAvas = _.shuffle(avalanches.data.children);
   displaySetup(shuffledAvas);
-  displayPayoff(shuffledAvas);
+  const revealButton = document.getElementById('reveal-btn');
+  revealButton.addEventListener('click', function(){
+    displayPayoff(shuffledAvas);
+  });
 }
 
 const displaySetup = function(shuffledAvas){
