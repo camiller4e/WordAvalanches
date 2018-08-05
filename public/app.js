@@ -36,6 +36,22 @@ const displayPayoff = function(shuffledAvas){
   payoff.appendChild(pTag);
 }
 
+
+
+// const checkAnswer = function(){
+//   const answerText = document.getElementById('answer-text');
+//   answerText.addEventListener('change', function(){
+//     if(answerText === shuffledAvas[1].data.selftext){
+//       const pTag = document.createElement('p');
+//       pTag.innerText = "Correct!";
+//       displayPayoff(shuffledAvas);
+//     } else const pTag = document.createElement('p');
+//       pTag.innerText = "Not quite!";
+//   })
+// }
+
+
+
 const app = function(){
 
   const url = 'https://www.reddit.com/r/WordAvalanches.json'

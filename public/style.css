@@ -1,0 +1,87 @@
+/* @font-face {
+  font-family: "adam-warren-pro";
+  src: url("fonts/adam-warren-pro.regular.ttf");
+} */
+
+body {
+
+  font-family: courier;
+  font-size: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+
+}
+
+#ava-intro {
+
+  font-size: 18px;
+
+  /* border-bottom-style: solid;
+  border-color: black;
+  border-width: 3px; */
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 30px;
+
+}
+
+#avalanche {
+
+  border-style: solid;
+
+}
+
+#ava-setup {
+
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+
+#ava-payoff {
+
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+
+#ava-input {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+h1 {
+
+  font-size: 60px;
+  padding-bottom: 10px;
+  border-bottom-style: solid;
+  width: 100%;
+  text-align: center;
+
+}
+
+/* footer {
+
+  border-top-style: solid;
+  width: 100%;
+
+} */
