@@ -11,6 +11,13 @@ const requestComplete = function(){
 
   let shuffledAvas = _.shuffle(avalanches.data.children);
   displaySetup(shuffledAvas);
+  const answer = shuffledAvas[1].data.selftext;
+
+  const answerButton = document.getElementById('submit-btn');
+  answerButton.addEventListener('click', function(){
+    checkAnswer(answer);
+  })
+
   const revealButton = document.getElementById('reveal-btn');
   revealButton.addEventListener('click', function(){
     displayPayoff(shuffledAvas);
@@ -36,19 +43,21 @@ const displayPayoff = function(shuffledAvas){
   payoff.appendChild(pTag);
 }
 
+const checkAnswer = function(answer){
+  debugger;
+      if(answerText === answer){
+      console.log("correct!");
+} else {
+  console.log("wrong!");
+}
+}
 
+// const pTag = document.createElement('p');
+// pTag.innerText = "Correct!";
+// displayPayoff(answer);
+// } else {const pTag = document.createElement('p');
+// pTag.innerText = "Not quite!"};
 
-// const checkAnswer = function(){
-//   const answerText = document.getElementById('answer-text');
-//   answerText.addEventListener('change', function(){
-//     if(answerText === shuffledAvas[1].data.selftext){
-//       const pTag = document.createElement('p');
-//       pTag.innerText = "Correct!";
-//       displayPayoff(shuffledAvas);
-//     } else const pTag = document.createElement('p');
-//       pTag.innerText = "Not quite!";
-//   })
-// }
 
 
 
