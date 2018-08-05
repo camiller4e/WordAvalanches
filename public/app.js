@@ -44,22 +44,18 @@ const displayPayoff = function(shuffledAvas){
 }
 
 const checkAnswer = function(answer){
-  debugger;
   const formBox = document.getElementById('avalanche');
-  const answerText = document.getElementById('answer-text').value;
-      if(answer.indexOf(answerText) > -1){
-      alert("BAM!");
-} else {
-  alert("not quite!")
-}
+  const answerText = document.getElementById('answer-text').value.toLowerCase().replace(/\W/g, ' ');
+      if(answer === answerText){
+        alert("BAM! Spot on!")
+      }else if(answer.indexOf(answerText) > -1){
+      alert("BOOM! Close enough!");
+    } else {
+      alert("ooooh, not quite!")
+    }
+  }
 
-}
 
-// const pTag = document.createElement('p');
-// pTag.innerText = "Correct!";
-// displayPayoff(answer);
-// } else {const pTag = document.createElement('p');
-// pTag.innerText = "Not quite!"};
 
 
 
