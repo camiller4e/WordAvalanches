@@ -11,7 +11,7 @@ const requestComplete = function(){
 
   let shuffledAvas = _.shuffle(avalanches.data.children);
   displaySetup(shuffledAvas);
-  const answer = shuffledAvas[1].data.selftext;
+  const answer = shuffledAvas[1].data.selftext.toLowerCase().replace(/\W/g, ' ');
 
   const answerButton = document.getElementById('submit-btn');
   answerButton.addEventListener('click', function(){
@@ -45,11 +45,14 @@ const displayPayoff = function(shuffledAvas){
 
 const checkAnswer = function(answer){
   debugger;
-      if(answerText === answer){
-      console.log("correct!");
+  const formBox = document.getElementById('avalanche');
+  const answerText = document.getElementById('answer-text').value;
+      if(answer.indexOf(answerText) > -1){
+      alert("BAM!");
 } else {
-  console.log("wrong!");
+  alert("not quite!")
 }
+
 }
 
 // const pTag = document.createElement('p');
